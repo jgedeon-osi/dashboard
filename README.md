@@ -9,3 +9,5 @@ Sandbox landing page application
 | CALS_URL | URL for CALS application | nil |
 | RELEASE_NOTES_URL | URL for release notes | https://github.com/ca-cwds/Sandbox/blob/master/Release%20Notes/release_notes.md |
 | JOB_AIDS_URL | URL for Job Aids | https://cwscms.osi.ca.gov/Portal/Digital-Services-Implementation-Portal/Training?folderId=1957 |
+| AUTHENTICATION_API_BASE_URL | Base URL for authentication api (e.g. http://perry.dev.cwds.tabordasolutions.net) | nil |
+
