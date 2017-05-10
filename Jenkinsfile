@@ -9,7 +9,7 @@ node {
 
    
    stage('Preparation') {
-		  git branch: 'master', url: 'git@github.com:ca-cwds/dashboard.git'
+		  git branch: 'master', credentialsId: '433ac100-b3c2-4519-b4d6-207c029a103b', url: 'git@github.com:ca-cwds/dashboard.git'
 
 		  
    }
