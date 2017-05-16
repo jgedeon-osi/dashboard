@@ -32,6 +32,6 @@ RUN rails assets:precompile
 #### ENV variables
 
 # run rails server
-CMD rails server -b 0.0.0.0
+CMD rails server -b 0.0.0.0 -p 3000
 
 
