@@ -1,13 +1,13 @@
 node {
    properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '3')), disableConcurrentBuilds(), [$class: 'RebuildSettings', autoRebuild: false, rebuildDisabled: false], pipelineTriggers([pollSCM('H/5 * * * *')])])
-   def dockerTag='1.0-SNAPSHOT'
+   def dockerTag='2.5-SNAPSHOT'
    def projectName='cwds/dashboard'
    
    catchError {
 
    
    stage('Preparation') {
-		  git branch: 'development', credentialsId: '433ac100-b3c2-4519-b4d6-207c029a103b', url: 'git@github.com:ca-cwds/dashboard.git'
+		  git branch: 'master', credentialsId: '433ac100-b3c2-4519-b4d6-207c029a103b', url: 'git@github.com:ca-cwds/dashboard.git'
    }
    stage('Build'){
 			echo 'Nothing to do'
