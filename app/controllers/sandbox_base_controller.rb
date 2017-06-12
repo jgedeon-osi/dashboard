@@ -12,8 +12,6 @@ class SandboxBaseController < ApplicationController
 
     if Cwds::Authentication.token_validation(new_token, ENV['AUTHENTICATION_API_BASE_URL'])
       session[:token] = new_token
-      params.delete(:token)
-      redirect_to request.path
     else
       redirect_to Cwds::Authentication.authentication_url(ENV['AUTHENTICATION_API_BASE_URL'], request.url)
     end
