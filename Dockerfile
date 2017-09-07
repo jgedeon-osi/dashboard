@@ -12,17 +12,11 @@ RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
 # install nodejs and npm
 RUN apt-get install -y nodejs
 
-# get latest yarn repo
-RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+RUN mkdir /var/www
 
-RUN mkdir /var/www; cd /var/www;
-
-# clone dashboard
-RUN git clone https://github.com/ca-cwds/dashboard.git /var/www/dashboard
+COPY . /var/www/dashboard
 
 WORKDIR /var/www/dashboard
-RUN cd /var/www/dashboard
 
 RUN bundle install
 
@@ -33,5 +27,3 @@ RUN rails assets:precompile
 
 # run rails server
 CMD rails server -b 0.0.0.0 -p 3000
-
-
