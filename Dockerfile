@@ -20,10 +20,14 @@ WORKDIR /var/www/dashboard
 
 RUN bundle install
 
+#### ENV variables
+ENV REDIS_HOST redis_temp
+ENV REDIS_PORT 6379
+
 # compile assets
 RUN rails assets:precompile
 
-#### ENV variables
+
 
 # run rails server
 CMD rails server -b 0.0.0.0 -p 3000
