@@ -1,13 +1,13 @@
 
 <div id = "dashboard_root" style="text-align: center;">
-
+<br/>
+<%= image_tag "cwds_logo.png" %>
 <h1> Welcome to CWDS Sandbox</h1>
-  <div id="links">
-
-    <h2><%= link_to "Intake" , @intake_url %></h2>
-
-    <h2><%= link_to "Certification, Approval, and Licensing Services (CALS)" , @cals_url %></h2>
-    <h2><%= link_to "Release Notes" , @release_notes_url %></h2>
-    <h2><%= link_to "Job Aids" , @job_aids_url %></h2>
+  <p> Disclaimer: This is just a list of links used on development and pre production environments. </p>
+  <div>
+    <%= link_to "Intake" , @intake_url, {class:'btn btn-success' } %><br /><br />
+    <%= link_to "Certification, Approval, and Licensing Services (CALS)" , @cals_url, {class:'btn btn-success' } %><br /><br />
+    <%= link_to "Release Notes", @release_notes_url, {class:'btn btn-success' } %><br /><br />
+    <%= link_to "Job Aids" , @job_aids_url, {class:'btn btn-success' } %><br /><br />
   </div >
 </div>

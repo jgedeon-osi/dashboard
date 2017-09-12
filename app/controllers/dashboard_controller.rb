@@ -1,8 +1,5 @@
 class DashboardController < SandboxBaseController
-
-
   def index
-
     @intake_url = "#{ENV['INTAKE_URL']}?token=#{session[:token]}"
     @cals_url = "#{ENV['CALS_URL']}?token=#{session[:token]}"
 
