@@ -27,7 +27,7 @@ class SandboxBaseController < ApplicationController
       redirect_to url_for(request.params.except(:token))
     else
       puts "toekn invalid - redirect to perry"
-      redirect_to Cwds::Authentication.authentication_url(ENV['AUTHENTICATION_API_BASE_URL'], request.url)
+      redirect_to Cwds::Authentication.authentication_url(ENV['AUTHENTICATION_API_BASE_URL'], request.original_url)
     end
   end
 
