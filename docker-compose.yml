@@ -17,7 +17,3 @@ services:
       - .:/var/www/dashboard
     tty: true
     stdin_open: true
-  redis:
-    image: 'redis:3.0'
-    ports:
-      - "6379:6379"
