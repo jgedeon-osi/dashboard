@@ -18,6 +18,9 @@ COPY . /var/www/dashboard
 
 WORKDIR /var/www/dashboard
 
+ENV REDIS_HOST redis_temp
+ENV REDIS_PORT 6379
+
 RUN bundle install
 
 # compile assets
