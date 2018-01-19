@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/ca-cwds/cwds-authentication.git
-  revision: 5ce28289190a5dd4e1c3ffd50647c9e8f9e2c3b2
-  ref: 5ce2828
+  revision: 82c1dcfa303576ce9744e77522540ae8c321d292
+  ref: 82c1dcf
   specs:
     cwds-authentication (0.1.0)
       activesupport (~> 5.0)
@@ -107,6 +107,7 @@ GEM
     minitest (5.10.1)
     multi_json (1.12.1)
     multipart-post (2.0.0)
+    newrelic_rpm (4.7.1.340)
     nio4r (2.0.0)
     nokogiri (1.7.1)
       mini_portile2 (~> 2.1.0)
@@ -228,6 +229,7 @@ DEPENDENCIES
   dotenv-rails (~> 2.2)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
+  newrelic_rpm
   puma (~> 3.7)
   rails (~> 5.1.0.rc1)
   redis-rails
