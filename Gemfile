@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'cwds-authentication', github: 'ca-cwds/cwds-authentication', :ref => "5ce2828"
+gem 'cwds-authentication', github: 'ca-cwds/cwds-authentication', :ref => "82c1dcf"
 
 gem 'newrelic_rpm'
 
