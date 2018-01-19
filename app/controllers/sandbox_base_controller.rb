@@ -5,12 +5,14 @@ class SandboxBaseController < ApplicationController
 
   def authenticate_with_cwds
 
+    token = Cwds::Authentication.token_generation(params[:accessCode], ENV['AUTHENTICATION_API_BASE_URL'])
+
     puts "beofre - session token #{session[:token]}"
 
-    if params[:token]
-      puts "params token #{params[:token]}"
+    if token
+      puts "params token #{token}"
       # If passed a new token, delete the one from the session
-      new_token = params[:token]
+      new_token = token
       session.delete(:token)
     end
 

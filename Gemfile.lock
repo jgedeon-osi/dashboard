@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/ca-cwds/cwds-authentication.git
-  revision: 5ce28289190a5dd4e1c3ffd50647c9e8f9e2c3b2
-  ref: 5ce2828
+  revision: 82c1dcfa303576ce9744e77522540ae8c321d292
+  ref: 82c1dcf
   specs:
     cwds-authentication (0.1.0)
       activesupport (~> 5.0)
