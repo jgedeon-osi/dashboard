@@ -1,6 +1,6 @@
 node {
    properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '3')), disableConcurrentBuilds(), [$class: 'RebuildSettings', autoRebuild: false, rebuildDisabled: false], pipelineTriggers([pollSCM('H/5 * * * *')])])
-   def dockerTag='0.4.2-SNAPSHOT'
+   def dockerTag='0.5.5-PERRYv2'
    def projectName='cwds/dashboard'
    
    catchError {
