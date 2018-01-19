@@ -10,7 +10,7 @@ class SandboxBaseController < ApplicationController
     puts "beofre - session token #{session[:token]}"
 
     if token
-      puts "params token #{params[:token]}"
+      puts "params token #{token}"
       # If passed a new token, delete the one from the session
       new_token = token
       session.delete(:token)
