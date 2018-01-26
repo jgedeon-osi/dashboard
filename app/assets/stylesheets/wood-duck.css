@@ -13,7 +13,9 @@
   font-size: inherit;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  text-rendering: auto; }
+  text-rendering: auto; 
+}
+
 
 .fa-lg {
   font-size: 1.33333em;
@@ -148,7 +150,10 @@
   line-height: 2em;
   position: relative;
   vertical-align: middle;
-  width: 2em; }
+  width: 1.5em; 
+  opacity: .4;
+}
+ 
 
 .fa-stack-1x, .fa-stack-2x {
   left: 0;
@@ -160,7 +165,7 @@
   line-height: inherit; }
 
 .fa-stack-2x {
-  font-size: 2em; }
+  font-size: 1em; }
 
 .fa-inverse {
   color: #fff; }
@@ -2625,13 +2630,15 @@
     margin-top: 3rem; }
   .card .card-header {
     border-bottom: 0.1rem solid #e8e8e8;
-    display: block;
-    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 2.2rem;
     overflow: hidden;
-    padding: 1.5rem 3rem; }
+    padding: 1.25rem 3rem; }
     .card .card-header span {
       float: left;
-      font-weight: 400;
+      font-weight: 500;
       margin: 0;
       padding: 0; }
     .card .card-header a {
@@ -2974,12 +2981,12 @@ h3 {
 
 h1 {
   font-size: 4rem;
-  font-weight: 300;
+  font-weight: 450;
   margin-bottom: 0; }
 
 h2 {
   font-size: 3rem;
-  font-weight: 600; }
+  font-weight: 500; }
 
 h3 {
   font-size: 2.4rem;
@@ -3053,6 +3060,10 @@ ol {
 .c-orange {
   color: #fa8d29; }
 
+  .c-purple {
+    color: #601974;
+}
+
 .c-red {
   color: #d8263d; }
 
@@ -3104,8 +3115,14 @@ ol {
 .bg-red {
   background-color: #d8263d; }
 
+.bg-purple {
+    background-color: #601974;}
+
 .c-gray {
   color: #050505; }
+
+
+
 
 .Select--multi .Select-control {
   border: none;

@@ -8,7 +8,7 @@ services:
     ports:
       - "3000:3000"
     environment:
-      AUTHENTICATION_API_BASE_URL: "https://perry.preint.cwds.io"
+      AUTHENTICATION_API_BASE_URL: "https://web.preint.cwds.io/perry/"
       INTAKE_URL: "https://web.preint.cwds.io/intake"
       CALS_URL: "https://web.preint.cwds.io/cals"
       REDIS_HOST: 'redis'

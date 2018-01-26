@@ -1,13 +1,161 @@
 
-<div id = "dashboard_root" style="text-align: center;">
-<br/>
-<%= image_tag "cwds_logo.png" %>
-<h1> Welcome to CWDS Sandbox</h1>
-  <p> Disclaimer: This is just a list of links used on development and pre production environments. </p>
-  <div>
-    <%= link_to "Intake" , @intake_url, {class:'btn btn-success' } %><br /><br />
-    <%= link_to "Certification, Approval, and Licensing Services (CALS)" , @cals_url, {class:'btn btn-success' } %><br /><br />
-    <%= link_to "Release Notes", @release_notes_url, {class:'btn btn-success' } %><br /><br />
-    <%= link_to "Job Aids" , @job_aids_url, {class:'btn btn-success' } %><br /><br />
-  </div >
+<div id="global-header">
+  <div class="container"> 
+    <div class="row">
+      <div class="col-md-12">
+        <div class="padded">
+          <span><strong>CWS-CARES</strong></span>
+          <span class="badge-environment half-gap-left">Intergration</span>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div> 
+
+<div id="page-header">
+  <div class="container"> 
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Integration Services<h1>  
+      </div>
+    </div>
+  </div> 
+</div> 
+
+
+<div class="container" id="main-content"> 
+  <div class="row">
+    <div class="col-md-12">
+      <div style="margin: 45px 0px 15px 0px">
+        <h3>Services</h3>
+        <p> The following are links to [insert environment name] environments. Due to continuous product improvements, content, colors and sizes are subject to change. Any and all feedback can be sent to Pierre Kleins personal email. He is totally cool with this. </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+  
+  <div class="col-md-4">
+  <div class="card">
+    <div class="card-header bg-purple">
+      <span class="fa-stack  bg-purple">
+      <i class="fa fa-circle fa-stack-2x c-white"></i>
+      <i class="fa fa-history fa-stack-1x c-purple"></i>
+      </span>
+      <div class="c-white half-gap-left">Snapshot</div>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="double-gap-top">
+              <p> Search for people and their past child welfare history by using the Child Welfare History Snapshot tool.</p>
+              <a href="@cals_url">Child Welfare History Snapshot Tool</a>
+          </div>
+        </div>
+      </div> 
+  </div>
 </div>
+</div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header bg-purple">
+          <span class="fa-stack  bg-purple">
+          <i class="fa fa-circle fa-stack-2x c-white"></i>
+          <i class="fa fa-phone fa-stack-1x c-purple"></i>
+          </span>
+          <div class="c-white half-gap-left">Hotline</div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="double-gap-top">
+                  <p>Create child abuse screenings by entering pertinent information/allegations; searching for child welfare history; and determining the level of risk of abuse and/or neglect for assignment.</p>
+                  <a href="@cals_url">Hotline Screener Tool</a>
+              </div>
+            </div>
+          </div> 
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+  <div class="card">
+    <div class="card-header bg-purple">
+      <span class="fa-stack  bg-purple">
+      <i class="fa fa-circle fa-stack-2x c-white"></i>
+      <i class="fa fa-home fa-stack-1x c-purple"></i>
+      </span>
+      <div class="c-white half-gap-left">CALS</div>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="double-gap-top">
+              <p>Search CWS/CMS, LIS and FAS data for Facilities, Children associated to facilities and Facility Complaint History.</p>
+              <a href="">Facility and Home Search and Profile</a>
+              <hr>
+              <p>Create RFA applications for potential applicants looking to provide safe homes for children.</p>
+              <a href="">Resource Family Application</a>
+          </div>
+        </div>
+      </div> 
+  </div>
+</div>
+</div>
+
+
+  <div class="col-md-12">
+    <div style="margin: 45px 0px 15px 0px">
+      <h3> Resources </h3>
+    </div>
+  </div>
+
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header bg-dark-grey">
+          <span class="fa-stack  bg-dark-grey">
+          <i class="fa fa-circle fa-stack-2x c-white"></i>
+          <i class="fa fa-info fa-stack-1x c-dark-grey"></i>
+          </span>
+          <div class="c-white half-gap-left">Training On Demand </div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="double-gap-top">
+                  <p>Job aids, demo videos and other training tools are available to county and State staff to learn CWS-CARES at their own pace.</p>
+                  <a href="https://cwscms.osi.ca.gov/login">Job Aids Portal</a>
+              </div>
+            </div>
+          </div> 
+      </div>
+    </div>
+  </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header bg-dark-grey">
+          <span class="fa-stack  bg-dark-grey">
+          <i class="fa fa-circle fa-stack-2x c-white"></i>
+          <i class="fa fa-sticky-note-o fa-stack-1x c-dark-grey"></i>
+          </span>
+          <div class="c-white half-gap-left">Release Notes</div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="double-gap-top">
+                  <p>Visit Github to see a log of new features, improvements and bug fixes organized by their release dates.</p>
+                  <a href="@cals_url">CWDS Release Notes</a>
+              </div>
+            </div>
+          </div> 
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+  
