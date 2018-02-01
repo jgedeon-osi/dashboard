@@ -48,7 +48,7 @@
         <div class="col-md-12">
           <div class="double-gap-top">
               <p> Search for people and their past child welfare history by using the Child Welfare History Snapshot tool.</p>
-              <a href="">Child Welfare History Snapshot Tool</a>
+              <%= link_to "Child Welfare History Snapshot Tool", @intake_url %>
           </div>
         </div>
       </div> 
@@ -69,7 +69,7 @@
             <div class="col-md-12">
               <div class="double-gap-top">
                   <p>Create child abuse screenings by entering pertinent information/allegations; searching for child welfare history; and determining the level of risk of abuse and/or neglect for assignment.</p>
-                  <a href="@intake_url">Hotline Screener Tool</a>
+                  <%= link_to "Hotline Screener Tool", @intake_url %>
               </div>
             </div>
           </div> 
@@ -93,7 +93,7 @@
               <a href="@cals_url">Facility and Home Search and Profile</a>
               <hr>
               <p>View and create RFA applications for potential applicants looking to provide safe homes for children.</p>
-              <a href="@cals_url">Resource Family Applications</a>
+              <%= link_to "Resource Family Application", @cals_url %>
           </div>
         </div>
       </div> 
@@ -122,7 +122,7 @@
             <div class="col-md-12">
               <div class="double-gap-top">
                   <p>Job aids, demo videos and other training tools are available for staff to learn CWS-CARES at their own pace.</p>
-                  <a href="https://cwscms.osi.ca.gov/login">Job Aids Portal</a>
+                  <%= link_to "Job Aids Portal", @job_aids_url %>
               </div>
             </div>
           </div> 
@@ -143,7 +143,7 @@
             <div class="col-md-12">
               <div class="double-gap-top">
                   <p>Visit Github to see a log of new features, improvements and bug fixes organized by their release dates.</p>
-                  <a href="@cals_url">CWDS Release Notes</a>
+                  <%= link_to "CWDS Release Notes" , @cals_url %>
               </div>
             </div>
           </div> 
