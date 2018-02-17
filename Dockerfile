@@ -13,8 +13,11 @@ RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
 RUN apt-get install -y nodejs
 
 RUN mkdir /var/www
+RUN mkdir -p /dashboard
 
 COPY . /var/www/dashboard
+
+RUN ln -s /var/www/dashboard /dashboard
 
 WORKDIR /var/www/dashboard
 
