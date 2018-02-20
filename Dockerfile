@@ -17,7 +17,7 @@ RUN mkdir -p /dashboard
 
 COPY . /var/www/dashboard
 
-RUN ln -s /var/www/dashboard /dashboard
+COPY ./app/assets /dashboard/
 
 WORKDIR /var/www/dashboard
 
