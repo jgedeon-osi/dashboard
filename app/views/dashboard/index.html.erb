@@ -48,7 +48,11 @@
         <div class="col-md-12">
           <div class="double-gap-top">
               <p> Search for people and their past child welfare history by using the Child Welfare History Snapshot tool.</p>
-              <%= link_to "Child Welfare History Snapshot Tool", @intake_url %>
+              <% if @intake_url %>
+                <%= link_to "Child Welfare History Snapshot Tool", @intake_url %>
+              <% else %>
+                <u>Child Welfare History Snapshot Tool</u>
+              <% end %>
           </div>
         </div>
       </div> 
@@ -69,7 +73,11 @@
             <div class="col-md-12">
               <div class="double-gap-top">
                   <p>Create child abuse screenings by entering pertinent information/allegations; searching for child welfare history; and determining the level of risk of abuse and/or neglect for assignment.</p>
-                  <%= link_to "Hotline Screener Tool", @intake_url %>
+                  <% if @intake_url %>
+                    <%= link_to "Hotline Screener Tool", @intake_url %>
+                  <% else %>
+                    <u>Hotline Screener Tool</u>
+                  <% end %>
               </div>
             </div>
           </div> 
@@ -90,10 +98,18 @@
         <div class="col-md-12">
           <div class="double-gap-top">
               <p>Search CWS/CMS, LIS and FAS data for Facilities, Children associated to facilities and Facility Complaint History.</p>
-              <a href="@cals_url">Facility and Home Search and Profile</a>
+              <% if @cals_url %>
+                <%= link_to "Facility and Home Search and Profile", @cals_url %>
+              <% else %>
+                <u>Facility and Home Search and Profile</u>
+              <% end %>
               <hr>
               <p>View and create RFA applications for potential applicants looking to provide safe homes for children.</p>
-              <%= link_to "Resource Family Application", @cals_url %>
+              <% if @cals_url %>
+                <%= link_to "Resource Family Application", @cals_url %>
+              <% else %>
+                <u>Resource Family Application</u>
+              <% end %>
           </div>
         </div>
       </div> 
@@ -122,7 +138,11 @@
             <div class="col-md-12">
               <div class="double-gap-top">
                   <p>Job aids, demo videos and other training tools are available for staff to learn CWS-CARES at their own pace.</p>
-                  <%= link_to "Job Aids Portal", @job_aids_url %>
+                  <% if @job_aids_url %>
+                    <%= link_to "Job Aids Portal", @job_aids_url %>
+                  <% else %>
+                    <u>Job Aids Portal</u>
+                  <% end %>
               </div>
             </div>
           </div> 
@@ -143,7 +163,11 @@
             <div class="col-md-12">
               <div class="double-gap-top">
                   <p>Visit Github to see a log of new features, improvements and bug fixes organized by their release dates.</p>
-                  <%= link_to "CWDS Release Notes" , @cals_url %>
+                  <% if @release_notes_url %>
+                    <%= link_to "CWDS Release Notes" , @release_notes_url %>
+                  <% else %>
+                    <u>CWDS Release Notes</u>
+                  <% end %>
               </div>
             </div>
           </div> 
