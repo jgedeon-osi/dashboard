@@ -8,9 +8,9 @@ services:
     ports:
       - "3000:3000"
     environment:
-      AUTHENTICATION_API_BASE_URL: "https://web.preint.cwds.io/perry/"
-      INTAKE_URL: "https://web.preint.cwds.io/intake"
-      CALS_URL: "https://web.preint.cwds.io/cals"
+      AUTHENTICATION_API_BASE_URL: "https://web.preint02.cwds.io/perry"
+      INTAKE_URL: "https://web.preint02.cwds.io/intake"
+      CALS_URL: "https://web.preint02.cwds.io/cals"
       REDIS_HOST: 'redis'
       REDIS_PORT: 6379
     volumes:
@@ -19,5 +19,3 @@ services:
     stdin_open: true
   redis:
     image: 'redis:3.0'
-    ports:
-      - "6379:6379"
