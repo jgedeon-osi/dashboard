@@ -17,7 +17,7 @@ RUN mkdir -p /dashboard
 
 COPY . /var/www/dashboard
 
-COPY ./app/assets /dashboard/
+COPY ./app/assets /dashboard/assets
 
 VOLUME /dashboard
 
