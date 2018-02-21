@@ -19,6 +19,8 @@ COPY . /var/www/dashboard
 
 COPY ./app/assets /dashboard/
 
+VOLUME /dashboard
+
 WORKDIR /var/www/dashboard
 
 ENV REDIS_HOST redis_temp
