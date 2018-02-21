@@ -17,10 +17,6 @@ RUN mkdir -p /dashboard
 
 COPY . /var/www/dashboard
 
-COPY ./app/assets /dashboard/assets
-
-VOLUME /dashboard
-
 WORKDIR /var/www/dashboard
 
 ENV REDIS_HOST redis_temp
@@ -29,9 +25,11 @@ ENV REDIS_PORT 6379
 RUN bundle install
 
 # compile assets
-RUN rails assets:precompile
+RUN bash -c "RAILS_ENV=production rails assets:precompile"
 
+COPY ./public/assets /dashboard/assets
 
+VOLUME /dashboard
 
 # run rails server
 CMD rails server -b 0.0.0.0 -p 3000
