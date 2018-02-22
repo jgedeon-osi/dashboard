@@ -48,8 +48,8 @@
         <div class="col-md-12">
           <div class="double-gap-top">
               <p> Search for people and their past child welfare history by using the Child Welfare History Snapshot tool.</p>
-              <% if @intake_url %>
-                <%= link_to "Child Welfare History Snapshot Tool", @intake_url %>
+              <% if @snapshot_url %>
+                <%= link_to "Child Welfare History Snapshot Tool", @snapshot_url %>
               <% else %>
                 <u>Child Welfare History Snapshot Tool</u>
               <% end %>
@@ -73,8 +73,8 @@
             <div class="col-md-12">
               <div class="double-gap-top">
                   <p>Create child abuse screenings by entering pertinent information/allegations; searching for child welfare history; and determining the level of risk of abuse and/or neglect for assignment.</p>
-                  <% if @intake_url %>
-                    <%= link_to "Hotline Screener Tool", @intake_url %>
+                  <% if @hotline_url %>
+                    <%= link_to "Hotline Screener Tool", @hotline_url %>
                   <% else %>
                     <u>Hotline Screener Tool</u>
                   <% end %>
@@ -98,8 +98,8 @@
         <div class="col-md-12">
           <div class="double-gap-top">
               <p>Search CWS/CMS, LIS and FAS data for Facilities, Children associated to facilities and Facility Complaint History.</p>
-              <% if @cals_url %>
-                <%= link_to "Facility and Home Search and Profile", @cals_url %>
+              <% if @facility_url %>
+                <%= link_to "Facility and Home Search and Profile", @facility_url %>
               <% else %>
                 <u>Facility and Home Search and Profile</u>
               <% end %>
@@ -174,9 +174,4 @@
       </div>
     </div>
   </div>
-</div> 
-
-
-
-
-  
+</div>
